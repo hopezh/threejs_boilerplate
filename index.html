@@ -9,14 +9,16 @@
     <meta charset="UTF-8" />
 
     <link ref="stylesheet" href="styles/main.css" type="text/css" />
-
-    <script type="module" src="src/main.js"></script>
   </head>
   <body>
-    <h1>This is a Three.js scene container.</h1>
+    <canvas id="canvas"></canvas>
 
-    <div id="scene-container">
-      <canvas id="canvas"></canvas>
-    </div>
+    <script src="./vendor/three/build/three.min.js"></script>
+
+    <script src="src/GenerateLights.js"></script>
+    <script src="src/SceneObjects.js"></script>
+
+    <script src="src/SceneManager.js"></script>
+    <script src="src/main.js"></script>
   </body>
 </html>

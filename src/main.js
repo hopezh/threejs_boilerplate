@@ -1,15 +1,3 @@
-import { RenderSettings } from "rhino3dm";
-import { Camera, Group, Scene } from "../vendor/three/build/three.module.js";
-
-// import {
-//   Camera,
-//   Group,
-//   Scene,
-// } from "https://unpkg.com/three@0.117.0/build/three.module.js";
-
-import { OrbitControls } from "../vendor/three/examples/jsm/controls/OrbitControls.js";
-// import { OrbitControls } from "https://unpkg.com/three@0.117.0/examples/jsm/controls/OrbitControls.js";
-
 const canvas = document.getElementById("canvas");
 const sceneManager = new SceneManager(canvas);
 

@@ -28,8 +28,8 @@ function SceneManager(canvas) {
     renderer.setPixelRatio(DPR);
     renderer.setSize(width, height);
 
-    renderer.gammaInput = true;
-    renderer.gammaOutput = true;
+    // renderer.gammaInput = true;
+    // renderer.gammaOutput = true;
 
     return renderer;
   }
@@ -50,7 +50,7 @@ function SceneManager(canvas) {
   }
 
   function createSceneSubjects(scene) {
-    const sceneSubjects = [new GeneralLights(scene), new SceneSubject(scene)];
+    const sceneSubjects = [new GenerateLights(scene), new SceneObjects(scene)];
 
     return sceneSubjects;
   }
